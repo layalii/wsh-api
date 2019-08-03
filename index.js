@@ -24,7 +24,7 @@ const websiteSchema = new Schema(
 
 const websites = mongoose.model("website", websiteSchema);
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const options = {
   debug: false,
