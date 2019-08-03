@@ -7,7 +7,9 @@ const cors = require("cors");
 app.use(express.json()); // for parsing application/json
 app.use(cors());
 
-mongoose.connect("mongodb://localhost:27017/wsh-db", {
+const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/wsh-db";
+
+mongoose.connect(MONGO_URL, {
   useNewUrlParser: true
 });
 const Schema = mongoose.Schema;
