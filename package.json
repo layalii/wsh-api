@@ -1,6 +1,9 @@
 {
   "name": "wsh-api",
   "version": "1.0.0",
+  "engines": {
+    "node": "v10.16.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
